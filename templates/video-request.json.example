@@ -1,8 +1,0 @@
-{
-  "model": "VIDEO_MODEL_ID",
-  "prompt": "生成一段 5 秒视频：蓝色科技感立方体缓慢旋转，镜头平稳推进。",
-  "seconds": "5",
-  "aspect_ratio": "16:9",
-  "resolution": "720p"
-}
-

@@ -1,7 +1,0 @@
-{
-  "env": {
-    "ANTHROPIC_API_KEY": "YOUR_API_KEY",
-    "ANTHROPIC_BASE_URL": "https://hrioapi.hrio.site/api"
-  }
-}
-

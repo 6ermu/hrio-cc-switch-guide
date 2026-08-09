@@ -1,4 +1,0 @@
-interface:
-  display_name: "HRIO API 接入助手"
-  short_description: "连接 HRIO、CC Switch 并验证多模型 API"
-  default_prompt: "Use $hrio-api-onboarding to configure HRIO API with CC Switch and run a safe connectivity test."
