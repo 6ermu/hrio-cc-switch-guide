@@ -1,0 +1,11 @@
+model_provider = "hrio"
+model = "MODEL_ID"
+model_reasoning_effort = "high"
+disable_response_storage = true
+
+[model_providers.hrio]
+name = "HrioAPI"
+base_url = "https://hrioapi.hrio.site/api/v1"
+wire_api = "responses"
+requires_openai_auth = true
+
