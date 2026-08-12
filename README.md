@@ -1,13 +1,12 @@
-# HrioAPI SDK 与天才程序员 Skill
+# HrioAPI SDK 连通测试
 
-本仓库只保留两类可执行内容：
+本仓库只保留 HrioAPI SDK 连通测试脚本。
 
-1. HrioAPI SDK 连通测试脚本。
-2. `genius-programmer`（天才程序员）Skill。
+`genius-programmer`（天才程序员）Skill 已拆分到独立仓库：
 
-完整的 CC Switch、SDK、其他模型和视频模型中文教程已改为 WPS 文档分发，不存放在本 GitHub 仓库中。
+https://github.com/6ermu/genius-programmer
 
-## HrioAPI SDK 连通测试
+完整的 CC Switch、其他模型和视频模型中文教程已改为 WPS 文档分发，不存放在本 GitHub 仓库中。
 
 仓库提供两个入口：
 
@@ -54,36 +53,8 @@ python .\scripts\test_hrio.py --model "MODEL_ID" --endpoint responses
 https://hrioapi.hrio.site/api/v1
 ```
 
-## 天才程序员 Skill
-
-Skill 位于：
-
-```text
-skills/genius-programmer/
-```
-
-主要文件：
-
-- `SKILL.md`：Skill 的触发条件和完整操作规范。
-- `agents/openai.yaml`：Codex 展示信息和默认提示。
-- `references/`：项目索引与可逆暂存构建规范。
-
-安装前请完整阅读 `SKILL.md`。手动安装到 Codex 的示例：
-
-```powershell
-Copy-Item -Recurse -Force ".\skills\genius-programmer" "$env:USERPROFILE\.codex\skills\genius-programmer"
-```
-
-重新启动 Codex 后可以显式调用：
-
-```text
-Use $genius-programmer to audit this project, announce the indexed file plan, implement the change, and verify the staged build.
-```
-
 ## 安全提醒
 
 - 不要提交真实 API Key。
 - Key 泄露后应立即在 HrioAPI 控制台吊销并重新创建。
-- 安装 Skill 前应检查其中的说明和可执行脚本。
 - SDK 测试建议先请求模型列表，再进行小 token 文本测试。
-
